@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <style>
     body {
@@ -25,58 +26,86 @@
       font-family: 'Playfair Display', serif;
       font-weight: 400;
     }
-
+    .playfair-regular-bold {
+      font-family: 'Playfair Display', serif;
+      font-weight: 500;
+    }
     .playfair-bold-italic {
       font-family: 'Playfair Display', serif;
-      font-weight: 700;
+      font-weight: 500;
       font-style: italic;
     }
   </style>
   <title>Inteo</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="#"><img src="./assets/logo/Logo.png" alt="logo"></a>
+  <header class="mx-40 my-8 sm:mx-10 my-3">
+    <nav class="flex justify-between">
+      <a href="#" class="transform transition-transform hover:scale-110"><img src="./assets/logo/Logo.png" alt="logo"></a>
+      <ul class="flex space-x-7">
+        <li class="transform transition-transform hover:scale-110">
+          <a href="" class="hidden md:block hover:text-blue-300 transition-colors duration-300">About</a>
         </li>
-        <li><a href="">About</a></li>
-        <li><a href="">Service</a></li>
-        <li><a href="">Our Work</a></li>
-        <li><a href="">CONTACT US↗︎</a></li>
+        <li class="transform transition-transform hover:scale-110">
+          <a href="" class="hidden md:block hover:text-blue-300 transition-colors duration-300">Service</a>
+        </li>
+        <li class="transform transition-transform hover:scale-110">
+          <a href="" class="hidden md:block hover:text-blue-300 transition-colors duration-300">Our Work</a>
+        </li>
+        <li class="transform transition-transform hover:scale-110">
+          <a href="" class="bg-yellow-700 text-white p-4" >CONTACT US↗︎</a>
+        </li>
       </ul>
     </nav>
   </header>
   <main>
     <section>
-      <div>
-        <h1>Make your home an ode to joy</h1>
-        <p>We turn your empty house to a lovely home, making the compact spaces with sapce saving furnitures. Making the unique tastes of yours into reality!</p>
-        <button type="button"><img src="./assets/button/CTA Button.png"></button>
+      <div class="my-16 md:mx-12 my-28 sm:mx-20 my-28 animate__animated animate__fadeInUp animate__slow">
+        <h1 class="playfair-regular-bold text-7xl text-center">Make <span class="playfair-bold-italic">your home </span>an ode to joy</h1>
+        <p class="text-gray-500 text-2xl text-center leading-relaxed lg:mx-[480px] my-10 sm:mx-0">
+          We turn your empty house to a lovely home, making the compact spaces with sapce saving furnitures. Making the unique tastes of yours into reality!
+        </p>
       </div>
-      <div>
-        <h2>Awards</h2>
-        <hr>
-        <ul>
-          <li>
+      <div class="sm:relative bg-gray-900">
+        <div class="lg:h-[1068px] relative sm:h-[640px] w-full overflow-hidden relative">
+          <img src="./assets/imgs/hero-image.png" alt="hero-image" class="h-full absolute sm:h-full min-w-[1440px] absolute top-0 left-1/2 -translate-x-1/2">
+        </div>
+        <button type="button" class="absolute top-0 -translate-y-1/2 lg:left-32 lg:translate-x-0 sm:left-1/2 -translate-x-1/2 transform transition-transform hover:scale-110">
+          <img src="./assets/button/CTA Button.png">
+        </button>
+      </div>
+      <div class="flex justify-between py-6 lg:px-40 sm:px-3 bg-gray-900 md:items-center sm:items-start">
+        <h2 class="text-gray-500 text-xl playfair-regular transform -rotate-90 md:translate-y-0 sm:translate-y-10">Awards</h2>
+        <hr class="border-gray-500 border-t-2 mx-4 flex-grow md:translate-y-0 sm:translate-y-12">
+        <ul id="rewards" class="flex lg:space-x-16 sm:space-x-0 lg:flex-nowrap sm:w-3/4 sm:flex-wrap">
+          <li class="flex items-center space-x-3 md:w-1/2 md:py-4 sm:w-full sm:py-3">
             <img src="./assets/awards/german-design-award.png" alt="german-design-award">
-            <p>German Design Award 2021</p>
+            <p class="text-gray-400">German Design Award <br>2021</p>
           </li>
-          <li>
+          <li class="flex items-center space-x-3 md:w-1/2 sm:w-full sm:py-3">
             <img src="./assets/awards/a-design-award.png" alt="a-design-award">
-            <p>Gold A’ Design Award 2021</p>
+            <p class="text-gray-400">Gold A’ Design Award <br>2021</p>
           </li>
-          <li>
+          <li class="flex items-center space-x-3 md:w-1/2 sm:w-full sm:py-3">
             <img src="./assets/awards/if-design-award.png" alt="if-design-award">
-            <p>IF Design Award 2020</p>
+            <p class="text-gray-400">IF Design Award <br>2020</p>
           </li>
-          <li>
+          <li class="flex items-center space-x-3 md:w-1/2 sm:w-full sm:py-3">
             <img src="./assets/awards/good-design-award.png" alt="good-design-award">
-            <p>Good Design Award 2019</p>
+            <p class="text-gray-400">Good Design Award <br>2019</p>
           </li>
         </ul>
       </div>
+      <script>
+        window.addEventListener('scroll', () => {
+          const heading = document.getElementById('rewards');
+          const rect = heading.getBoundingClientRect();
+          if (rect.top < window.innerHeight) {
+            heading.classList.add('animate__animated', 'animate__fadeInRight');
+            heading.classList.remove('opacity-0');
+          }
+        });
+      </script>
     </section>
   </main>
 </body>
