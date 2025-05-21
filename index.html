@@ -98,11 +98,11 @@
       </div>
       <script>
         window.addEventListener('scroll', () => {
-          const heading = document.getElementById('rewards');
-          const rect = heading.getBoundingClientRect();
+          const rewards = document.getElementById('rewards');
+          const rect = rewards.getBoundingClientRect();
           if (rect.top < window.innerHeight) {
-            heading.classList.add('animate__animated', 'animate__fadeInRight');
-            heading.classList.remove('opacity-0');
+            rewards.classList.add('animate__animated', 'animate__fadeInRight', 'animate__slow');
+            rewards.classList.remove('opacity-0');
           }
         });
       </script>
