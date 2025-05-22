@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
     :root {
@@ -45,6 +46,13 @@
       font-weight: 700;
       font-style: italic;
     }
+
+    .playfair-italic {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+
   </style>
   <title>Inteo</title>
 </head>
@@ -93,5 +101,52 @@
       </div>
     </section>
   </main>
+  <footer class="border-[#D9D9D6] border-t mx-5 py-10 md:mx-10 md:py-20 lg:mx-28">
+    <div class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-8">
+      <div class="text-3xl md:text-5xl">
+        <h3 class="playfair-regular whitespace-normal">Kick-start your dream<br>home with us</h3>
+        <h3 class="playfair-italic text-[#996830] underline decoration-1 underline-offset-1 mt-2 mb-12 md:mt-4">Send us a hi</h3>
+      </div>
+      <div class="md:max-w-[17.5rem]">
+        <div class="mb-8">
+          <h4 class="playfair-regular text-2xl">Brooklyn, New York</h4>
+          <p class="outfit-light text-sm">962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United State.</p>
+        </div>
+        <div class="mb-8">
+          <h5 class="outfit-light text-sm mb-2">Email us at</h5>
+          <p class="playfair-regular text-[#996830] text-2xl">hello@landify.design</p>
+        </div>
+        <div>
+          <h5 class="outfit-light text-sm mb-2">If you're hurry, quick call for us</h5>
+          <p class="playfair-regular text-[#996830] text-2xl">+8(663)125-08-59</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-y-8 lg:flex-row lg:justify-between [#D9D9D6] border-t mt-5 pt-5 md:mt-10 md:pt-10 lg:mt-28 lg:pt-28">
+      <div>
+        <p class="outfit-light text-base">© 2022 Inteo - Award winning studio. Made with love by <span class="text-[#996830]">Landify</span></p>
+      </div>
+      <div class="flex flex-col gap-x-6 gap-y-4 md:flex-row">
+        <div class="flex items-center">
+          <p class="text-[#444444] font-semibold text-sm mr-4">CONNECT</p>
+          <hr class="border-[#444444] border-t w-16">
+        </div>
+        <div class="flex gap-x-6 text-[#996830] text-xl">
+          <div class="flex items-center justify-center border border-[#E6D8CC] w-10 aspect-square rounded-full">
+            <i class="fa-brands fa-instagram gradient-text"></i>
+          </div>
+          <div class="flex items-center justify-center border border-[#E6D8CC] w-10 aspect-square rounded-full">
+            <i class="fa-brands fa-facebook gradient-text"></i>
+          </div>
+          <div class="flex items-center justify-center border border-[#E6D8CC] w-10 aspect-square rounded-full">
+            <i class="fa-brands fa-youtube gradient-text"></i>
+          </div>
+          <div class="flex items-center justify-center border border-[#E6D8CC] w-10 aspect-square rounded-full">
+            <i class="fa-brands fa-twitter gradient-text"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
