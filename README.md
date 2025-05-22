@@ -11,4 +11,4 @@ Design by Landify and Aravind Solaiappan on Figma
 ## ⚙️Development Team
 - **Rinko** (GitHub: [@matsu129](https://github.com/matsu129))
 - **Akane** (GitHub: [@Akane-F](https://github.com/Akane-F))
-- **Risa** (GitHub: [@risa0110]((https://github.com/risa0110))
+- **Risa** (GitHub: [@risa0110](https://github.com/risa0110))
