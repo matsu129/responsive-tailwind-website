@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
@@ -65,6 +68,7 @@
   </style>
   <title>Inteo</title>
 </head>
+
 <body>
   <header class="lg:mx-40 my-8 mx-10 ">
     <nav class="flex justify-between">
@@ -173,6 +177,87 @@
         <button class="bg-[var(--primary-600)] text-sm text-white px-6 py-4">CONTACT US　↗︎</button>
       </div>
     </section>
+    
+    <!--section ABOUT-->
+    <section class="prose text-[var(--neutral-900)] mx-[8vw]">
+      <section class="xl:flex gap-[3vw] my-[12vh] block">
+        <section class="xl:max-w-[592px] content-center">
+          <div class="flex items-center">
+            <span class="border-t w-16 mr-4 border-[var(--primary-600)]"></span>
+            <p class="font-semibold text-[var(--primary-600)] text-sm">ABOUT US</p>
+          </div>
+          <h1 class="playfair-regular text-4xl md:text-6xl mt-[2vh]">We help to bring your dream home to reality</h1>
+          <p class="text-[var(--neutral-700)] mt-[2vh] md:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+            fringilla dui amet faucibus nam. Erat id
+            laoreet posuere etiam morbi.</p>
+          <p class="text-[var(--neutral-700)] mt-[2vh] md:text-lg">Tempor dolor elementum tellus non ipsum faucibus. Justo, magna mauris
+            posuere auctor justo. Habitant proin
+            aliquet volutpat leo ultricies. Dui blandit eget vitae turpis ultrices aliquet nunc. Faucibus sit odio
+            bibendum lobortis diam.</p>
+        </section>
+        <section class="flex mt-[10vh] xl:mt-0 justify-self-center relative">
+          <div class="absolute left-[43%] -top-12 motion-safe:animate-spin" style="animation-duration: 8s;">
+            <img src="./assets/imgs/Badge.png" alt="spining-logo">
+          </div>
+          <div class="flex gap-[1vw]">
+            <img src="./assets/imgs/Image.png" alt="homeimage-1" class="mb-[8vh] md:w-[280px] md:h-[480px]">
+            <img src="./assets/imgs/Image (1).png" alt="homeimage-2" class="mt-[8vh] md:w-[280px] md:h-[480px]">
+          </div>
+        </section>
+      </section>
+     <!--section METRICS-->
+      <section class="md:flex-row flex flex-col gap-[13vw] mb-[7vh]">
+        <div class="gap-[1vw] xl:flex-row md:flex-col md:items-start flex flex-row items-center">
+          <h1 class="playfair-regular md:text-6xl text-5xl">100%</h1>
+          <p>SATISFITATION CLIENTS</p>
+        </div>
+        <div class="gap-[1vw] xl:flex-row md:flex-col md:items-start flex flex-row items-center">
+          <h1 class="playfair-regular md:text-6xl text-5xl">250</h1>
+          <p>EMPLOYEES ON WORLDWIDE</p>
+        </div>
+        <div class="gap-[1vw] xl:flex-row md:flex-col md:items-start flex flex-row items-center">
+          <h1 class="playfair-regular md:text-6xl text-5xl">3469</h1>
+          <p>PROJECTS COMPLETED ON 60 COUNTRIES</p>
+        </div>
+      </section>
+      <hr class="mb-[48px] bg-[var(--neutral-300)]">
+      <!--section SERVICES-->
+      <section class="my-[112px]">
+        <section class="xl:w-[55vw]">
+          <div class="flex items-center">
+            <span class="border-t w-16 mr-4 border-[var(--primary-600)]"></span>
+            <p class="font-semibold text-[var(--primary-600)] text-sm">OUR SERVICES</p>
+          </div>
+          <h1 class="playfair-regular text-4xl md:text-6xl mt-[2vh]">We provide the <i>best solutions</i> for your dream home</h1>
+        </section>
+        <section id="services-content" class="gap-[2vw] mt-[7vh] flex flex-col xl:flex-row ">
+          <section id="service-1" class="border border-[var(--primary-100)] p-[40px]">
+            <div><img src="./assets/logo/Service Icon.png" alt="architectural-logo"></div>
+            <div class="mt-[8vh]">
+              <h2 class="mb-[2vh] playfair-regular md:text-4xl text-3xl">Architectural & Interior design</h2>
+              <p class="text-[var(--neutral-700)]">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum,
+                ultricies.</p>
+            </div>
+          </section>
+          <section id="service-2" class="border border-[var(--primary-100)] p-[40px]">
+            <div><img src="./assets/logo/Service Icon (1).png" alt="renovation-logo"></div>
+            <div class="mt-[8vh]">
+              <h2 class="mb-[2vh] playfair-regular md:text-4xl text-3xl">Building Renovation</h2>
+              <p class="text-[var(--neutral-700)]">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum,
+                ultricies.</p>
+            </div>
+          </section>
+          <section id="service-3" class="border border-[var(--primary-100)] p-[40px]">
+            <div><img src="./assets/logo/Service Icon (2).png" alt="management-logo"></div>
+            <div class="mt-[8vh]">
+              <h2 class="mb-[2vh] playfair-regular md:text-4xl text-3xl">Construciton Management</h2>
+              <p class="text-[var(--neutral-700)]">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum,
+                ultricies.</p>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
   </main>
   <footer class="border-[var(--neutral-300)] border-t mx-5 py-10 md:mx-10 md:py-20 lg:mx-28 text-[var(--neutral-900)]">
     <div class="flex flex-col lg:flex-row lg:justify-between lg:gap-x-8">
@@ -222,4 +307,5 @@
     </div>
   </footer>
 </body>
+
 </html>
