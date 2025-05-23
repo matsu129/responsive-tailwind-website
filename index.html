@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <style>
+    :root {
+      --white: white;
+      --black: black;
+      --primary-600: #996830;
+      --primary-300: #C4A386;
+      --primary-100: #E6D8CC;
+      --neutral-900: #2C2C2C;
+      --neutral-700: #444444; /* Fallback */
+      --neutral-700: color-mix(in srgb, #000000 20%, #444444);
+      --neutral-500: #7C7C7C;
+      --neutral-300: #D9D9D6;
+      --neutral-100: #E5E5E5;
+    }
+    
     body {
       font-family: 'Outfit', sans-serif;
     }
@@ -44,16 +58,16 @@
       <a href="#" class="transform transition-transform hover:scale-110"><img src="./assets/logo/Logo.png" alt="logo"></a>
       <ul class="flex space-x-7">
         <li class="transform transition-transform hover:scale-110">
-          <a href="" class="hidden md:block hover:text-blue-300 transition-colors duration-300">About</a>
+          <a href="" class="hidden md:block hover:text-[var(--neutral-500)] transition-colors duration-300">About</a>
         </li>
         <li class="transform transition-transform hover:scale-110">
-          <a href="" class="hidden md:block hover:text-blue-300 transition-colors duration-300">Service</a>
+          <a href="" class="hidden md:block hover:text-[var(--neutral-500)] transition-colors duration-300">Service</a>
         </li>
         <li class="transform transition-transform hover:scale-110">
-          <a href="" class="hidden md:block hover:text-blue-300 transition-colors duration-300">Our Work</a>
+          <a href="" class="hidden md:block hover:text-[var(--neutral-500)] transition-colors duration-300">Our Work</a>
         </li>
         <li class="transform transition-transform hover:scale-110">
-          <a href="" class="bg-yellow-700 text-white p-4" >CONTACT US↗︎</a>
+          <a href="" class="bg-[var(--primary-600)] text-white p-4" >CONTACT US  ↗︎</a>
         </li>
       </ul>
     </nav>
@@ -62,35 +76,35 @@
     <section>
       <div class="my-16 md:mx-12 my-28 sm:mx-20 my-28 animate__animated animate__fadeInUp animate__slow">
         <h1 class="playfair-regular-bold text-7xl text-center">Make <span class="playfair-bold-italic">your home </span>an ode to joy</h1>
-        <p class="text-gray-500 text-2xl text-center leading-relaxed lg:mx-[480px] my-10 sm:mx-0">
+        <p class="text-[var(--neutral-500)] text-2xl text-center leading-relaxed lg:mx-[480px] my-10 sm:mx-0">
           We turn your empty house to a lovely home, making the compact spaces with sapce saving furnitures. Making the unique tastes of yours into reality!
         </p>
       </div>
-      <div class="sm:relative bg-gray-900">
+      <div class="sm:relative bg-[var(--neutral-900)]">
         <div class="lg:h-[1068px] relative sm:h-[640px] w-full overflow-hidden relative">
           <img src="./assets/imgs/hero-image.png" alt="hero-image" class="h-full absolute sm:h-full min-w-[1440px] absolute top-0 left-1/2 -translate-x-1/2">
         </div>
-        <button type="button" class="absolute top-0 -translate-y-1/2 lg:left-32 lg:translate-x-0 sm:left-1/2 -translate-x-1/2 transform transition-transform hover:scale-110">
-          <img src="./assets/button/CTA Button.png">
+        <button type="button" class="absolute top-0 -translate-y-1/2 lg:left-32 lg:translate-x-0 sm:left-1/2 -translate-x-1/2  hover:rotate-45 transition-transform duration-300">
+          <img src="./assets/button/CTA Button.png" class="hover:scale-110 transition-transform duration-300">
         </button>
       </div>
       <div class="flex justify-between py-6 lg:px-40 sm:px-3 bg-gray-900 md:items-center sm:items-start">
         <h2 class="text-gray-500 text-xl playfair-regular transform -rotate-90 md:translate-y-0 sm:translate-y-10">Awards</h2>
         <hr class="border-gray-500 border-t-2 mx-4 flex-grow md:translate-y-0 sm:translate-y-12">
         <ul id="rewards" class="flex lg:space-x-16 sm:space-x-0 lg:flex-nowrap sm:w-3/4 sm:flex-wrap">
-          <li class="flex items-center space-x-3 md:w-1/2 md:py-4 sm:w-full sm:py-3">
+          <li class="flex items-center space-x-3 md:w-1/2 md:py-4 sm:w-full sm:py-3 hover:scale-110 transition-transform duration-300">
             <img src="./assets/awards/german-design-award.png" alt="german-design-award">
             <p class="text-gray-400">German Design Award <br>2021</p>
           </li>
-          <li class="flex items-center space-x-3 md:w-1/2 sm:w-full sm:py-3">
+          <li class="flex items-center space-x-3 md:w-1/2 sm:w-full sm:py-3 hover:scale-110 transition-transform duration-300">
             <img src="./assets/awards/a-design-award.png" alt="a-design-award">
             <p class="text-gray-400">Gold A’ Design Award <br>2021</p>
           </li>
-          <li class="flex items-center space-x-3 md:w-1/2 sm:w-full sm:py-3">
+          <li class="flex items-center space-x-3 md:w-1/2 sm:w-full sm:py-3 hover:scale-110 transition-transform duration-300">
             <img src="./assets/awards/if-design-award.png" alt="if-design-award">
             <p class="text-gray-400">IF Design Award <br>2020</p>
           </li>
-          <li class="flex items-center space-x-3 md:w-1/2 sm:w-full sm:py-3">
+          <li class="flex items-center space-x-3 md:w-1/2 sm:w-full sm:py-3 hover:scale-110 transition-transform duration-300">
             <img src="./assets/awards/good-design-award.png" alt="good-design-award">
             <p class="text-gray-400">Good Design Award <br>2019</p>
           </li>
